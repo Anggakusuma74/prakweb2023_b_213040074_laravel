@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/about', function () {
+    return view('about', [
+        "name" => "Muhammad Angga Kusuma",
+        "email" => "angga.213040074@mail.unpas.ac.id",
+        "image" => "Me.jpg"
+    ]);
+});
+
+Route::get('/blog', function () {
+    return view('posts');
 });
