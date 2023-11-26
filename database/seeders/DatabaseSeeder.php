@@ -19,16 +19,17 @@ class DatabaseSeeder extends Seeder
         
 
         // User::create([
-        //     'name' => 'Muhammad Angga Kusuma',
-        //     'email' => 'angga.213040074@mail.unpas.ac.id',
+        //     'name' => 'Muhammad Anggi Kusuma',
+        //     'email' => 'anggi.213040075@mail.unpas.ac.id',
         //     'password' => bcrypt('12345')
         // ]);
 
-        // User::create([
-        //     'name' => 'Muhammad Anggi Kusuma',
-        //     'email' => 'anggi.213040075@mail.unpas.ac.id',
-        //     'password' => bcrypt('54321')
-        // ]);
+        User::create([
+            'name' => 'Muhammad Angga Kusuma',
+            'username' => 'Angga',
+            'email' => 'angga.213040074@mail.unpas.ac.id',
+            'password' => bcrypt('123456')
+        ]);
 
         User::factory(3)->create();
 
